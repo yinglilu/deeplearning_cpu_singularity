@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/yinglilu/deeplearning_cpu_singularity.svg?branch=master)](https://travis-ci.org/yinglilu/deeplearning_cpu_singularity)
 
 # A deep learning singularity container
 
@@ -15,7 +16,7 @@
     - SimpleITK
     - Scikit-image
 
-## pre-requisite
+## Pre-requisite
 
 - install singularity on your host
 
@@ -30,9 +31,9 @@
     singularity pull --name deeplearning_cpu.simg shub://yinglilu/deeplearning_cpu_singularity
     ```
 
-## usage
+## Usage
 
-### 1. enter into singularity container, run command in the container
+### 1. Enter into singularity container, run command in the container
 
 ```bash
 # enter into singularity container: imagine it as SSH into (passwordless) another machine
@@ -61,7 +62,7 @@ exit
 
 to exit the container.
 
-#### note: /path/to/
+#### Note: /path/to/
 
 - Singularity will bind your host's $HOME to container's $HOME automatically. That's mean, if you do modification on your host's home directory, you can see the modifications in the container's home directory, and vice versa.
 
@@ -69,8 +70,8 @@ to exit the container.
 
     Therefore, `/path/to/` can be a relative path or absolute path of your home or bind path.
 
-## 2. run singularity container command directly
+## 2. Run singularity container command directly
 
 ```bash
-singularity exec --nv deeplearning_cpu.simg python /path/to/<your_script.py>
+singularity exec deeplearning_cpu.simg python /path/to/<your_script.py>
 ```
