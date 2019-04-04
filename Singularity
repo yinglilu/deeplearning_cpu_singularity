@@ -22,7 +22,7 @@ conda install -c anaconda scikit-image==0.14.2
 
 #pytorch
 conda install $DRYRUN -c pytorch pytorch-cpu==1.0.1
-conda install $DRYRUN -c pytorch torchvision-cpu=0.2.1
+conda install $DRYRUN -c pytorch torchvision-cpu==0.2.1
 
 #theano
 apt-get install -y build-essential
